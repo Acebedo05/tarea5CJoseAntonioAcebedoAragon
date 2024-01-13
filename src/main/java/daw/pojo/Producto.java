@@ -8,18 +8,22 @@ import java.util.Objects;
  */
 public class Producto {
 
+    // Atributos.
     private String nombre;
     private double precio;
 
+    // Constructor.
     public Producto(String nombre, double precio) {
         this.nombre = nombre;
         this.precio = precio;
     }
 
+    // Constructor vacío.
     public Producto() {
 
     }
 
+    // Getters y Setters.
     public String getNombre() {
         return nombre;
     }
@@ -36,6 +40,7 @@ public class Producto {
         this.precio = precio;
     }
 
+    // HashCode.
     @Override
     public int hashCode() {
         int hash = 3;
@@ -44,6 +49,7 @@ public class Producto {
         return hash;
     }
 
+    // Equals.
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -62,6 +68,7 @@ public class Producto {
         return Objects.equals(this.nombre, other.nombre);
     }
 
+    // ToString.
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
